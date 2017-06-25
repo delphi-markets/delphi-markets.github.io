@@ -1,0 +1,118 @@
+/* jQuery Countdown styles 2.0.0. */
+.is-countdown {
+	border: 1px solid #02C293;
+	background-color: black;
+    color: #48e2d3;
+	color: #02C293;
+	color: #20b2aa;
+}
+.countdown-rtl {
+	direction: rtl;
+}
+.countdown-holding span {
+	color: #888;
+}
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0px 2px;
+	text-align: center;
+}
+.countdown-show1 .countdown-section {
+	width: 92%;
+}
+.countdown-show2 .countdown-section {
+	width: 42%;
+}
+.countdown-show3 .countdown-section {
+	width: 31.5%;
+}
+.countdown-show4 .countdown-section {
+	width: 22.5%;
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+.countdown-section {
+	display: block;
+	float: left;
+	font-size: 75%;
+	text-align: center;
+	margin:auto;
+}
+.countdown-amount {
+    font-size: 200%;
+		  font-family: "Times New Roman", Times, serif;
+
+}
+.countdown-period {
+    display: block;
+		font-weight:600;
+
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+
+}
+
+#icoCountdown {
+   position: fixed;
+    top: 2px;
+	left: 41%;
+	width:20%;
+	z-index: 30000000;
+	  display: block;
+  position: fixed;
+  padding-top:3px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 9899;
+  background-color:transparent;
+  border: 1px solid rgba(70, 226, 210, 0.36);
+  border: 1px solid rgba(2, 192, 144, 0.55);
+  border: 0px solid rgba(32, 178, 170, 1);
+  padding-left: 1px;
+    opacity: 1;
+font-family: 'Quicksand', sans-serif;
+font-weight:300;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #icoCountdown {
+	    line-height: 18px;
+						font-size:10px;
+
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #icoCountdown {
+	position: absolute;
+    top: 2px;
+	left: 40%;
+	line-height: 12px;
+	font-size: 10px;
+    min-width: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #icoCountdown {
+	     position: absolute;
+    top: 2px;
+	left: 50%;
+	line-height: 6px;
+	font-size:5px;
+    min-width: 100px;
+  }
+}
