@@ -10954,4 +10954,5 @@ body::before {
 
 .modalContent {
   background-color: rgba(0, 24, 27, 0.5); 
+  background: transparent;
 }
