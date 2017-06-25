@@ -348,6 +348,8 @@ $(function () {
 function showMailingPopUp() {
     require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"cebf2522b660b351e45903e34","lid":"66b73b9c8a"}) })
     document.cookie = 'MCEvilPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+    $('.modalContent').attr('style',  'background: transparent;');
+
 };
 
 document.getElementById("lildel").onclick = function() {showMailingPopUp()};
