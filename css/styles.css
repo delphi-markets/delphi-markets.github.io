@@ -10995,3 +10995,14 @@ body::before {
   font-weight:600; 
   padding-left:25px;
   }
+
+#mce-error-response {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#mce-success-response {
+  color:#98FB98;
+  margin-bottom: 20px;
+  text-align: center;
+}
