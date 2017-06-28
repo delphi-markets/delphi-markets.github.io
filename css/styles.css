@@ -10956,3 +10956,42 @@ body::before {
   background-color: rgba(0, 24, 27, 0.5); 
   background: transparent;
 }
+
+#mc_embed_signup{
+  background-color: transparent; clear:left; font:14px Helvetica,Arial,sans-serif; 
+  }
+
+#mc_embed_signup_scroll{
+  background-color: transparent;
+  }
+.mc-field-group{
+  text-align: center;
+}
+#mce-EMAIL{
+  text-align: center; 
+  background-color: 
+  transparent; color:#f6f6f6; 
+  width: 35%; display:inline; 
+  border: 1px solid #4d4d4d; 
+  font-family: 'Quicksand', sans-serif;
+  }
+
+.getupdateclass{
+  margin-right: 2%; 
+  margin-top:0; 
+  color:#b6b6b6; 
+  display:inline; 
+  font-size:28px;
+  }
+
+#mc-embedded-subscribe{
+  display: inline; 
+  background-color:transparent; 
+  color:#b6b6b6; height:100%; 
+  font-size:18px; 
+  border: 0px solid #4d4d4d; 
+  line-height: 1.3; 
+  font-family: 'Quicksand', sans-serif; 
+  font-weight:600; 
+  padding-left:25px;
+  }
