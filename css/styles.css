@@ -9830,7 +9830,7 @@ img.color_flip:hover {
 }
 
 #lildel:hover { 
-    background: url(../img/home/btn2a.png) no-repeat; 
+    background: url(../img/home/btn1a.png) no-repeat; 
     background-size: cover;
 }
 
@@ -11004,4 +11004,11 @@ body::before {
   color:#98FB98;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.delsymbol {
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 15px; 
+  padding-left:4px; 
+  margin-bottom:1px;
 }
