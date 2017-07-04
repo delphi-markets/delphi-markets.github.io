@@ -9814,17 +9814,6 @@ img.color_flip:hover {
     -webkit-transform: scale(1.1);
 }
 
-
-#icologos { 
-      background: url(../img/home/eco2.png);
-        -webkit-transition: all .4s ease-in-out;
-}
-
-#icologos:hover { 
-    background: url(../img/home/eco3.png);
-        -webkit-transform: scale(1.1);
-}
-
 #lildel { 
     background-size: cover;
 }
