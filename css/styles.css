@@ -6896,6 +6896,7 @@ fieldset[disabled] a.btn {
 .btn-ghost.btn-light:hover {
   color: #02C293;
   border-color: #02C293;
+  border-color: black;
 }
 
 .btn-ghost.btn-dark {
@@ -6905,11 +6906,10 @@ fieldset[disabled] a.btn {
 }
 
 .btn-ghost.btn-dark:hover {
-  background-color: #f2f4f7;
+  background-color: #f9f9f9;
   color: black;
   border-color: black;
 }
-
 
 .btn-sm {
   height: 36px;
@@ -9814,41 +9814,6 @@ img.color_flip:hover {
     -webkit-transform: scale(1.1);
 }
 
-#lildel { 
-    background-size: cover;
-}
-
-#lildel:hover { 
-    background: url(../img/home/btn2a.png) no-repeat; 
-    background-size: cover;
-}
-
-#learnmore { 
-    background-size: cover;
-}
-
-#learnmore:hover { 
-    background: url(../img/home/btn2.png) no-repeat; 
-    background-size: cover;
-}
-
-#readwp { 
-    background-size: cover;
-}
-
-#readwp:hover { 
-    background: url(../img/home/btn4.png) no-repeat; 
-    background-size: cover;
-}
-
-#getdelto { 
-    background-size: cover;
-}
-
-#getdelto:hover { 
-    background: url(../img/home/btn3b.png) no-repeat; 
-    background-size: cover;
-}
 
 .widget-title {
   font-size: 18px;
@@ -10997,4 +10962,65 @@ body::before {
   color:#98FB98;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.hoverbox {
+  position:relative;
+  vertical-align: middle;
+  color: #0b7;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 2px solid #0b7;
+  -webkit-transition:0.5s;
+}
+
+.hoverbox:hover {
+  border: 2px solid rgba(0,160,80,0);
+  color: #FFF;
+}
+
+.hoverbox::before, .hoverbox::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.coolx::before {
+  border-bottom: 2px solid #02C293;
+  border-left: 2px solid #02C293;
+  -webkit-transform-origin: 0 100%;
+}
+
+.coolx::after {
+  border-top: 2px solid #02C293;
+  border-right: 2px solid #02C293;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.hoverbox:hover::after, .hoverbox:hover::before {
+  -webkit-transform: scale(1);
+}
+
+.coolblack::before {
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  -webkit-transform-origin: 0 100%;
+}
+
+.coolblack::after {
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  -webkit-transform-origin: 100% 0%;
 }
