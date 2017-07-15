@@ -1,40 +1,196 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>Delphi Crowdsale</title>
+  <meta charset="utf-8">
+  <title>Delphi Crowdsale</title>
+
   <!--SEO Meta Tags-->
   <meta name="description" content="Delphi Prediction Markets" />
-  <meta name="keywords" content="prediction, smart contracts, ethereum, eth, delphi, oracle, blockchain, del, markets, market, ico, crowdsale, contract, address" />
+  <meta name="keywords" content="prediction, smart contracts, ethereum, eth, delphi, oracle, blockchain, del, phi, markets, market" />
   <meta name="author" content="Delphi" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<style>
-body {
-    background-color: black;
-    color: #40C0C0;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top: 35%;
-    width: 98%;
-}
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CPlayfair+Display:regular,700,900%7CRaleway:100,200,300,regular,500,600,700,800,900">
 
-a {
-    color: #02C293;
-}
+  <link href="css/styles.css" rel="stylesheet" media="screen">
 
-h1 {
-    color: white;
-}
-
-</style>
+  <!--Modernizr / Detectizr-->
+  <script src="js/vendor/modernizr.custom.js"></script>
+  <script src="js/vendor/detectizr.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body>
-<h3>To take part in the Delphi crowdsale, fund the following contract from a wallet you control:</h3>
-(DO NOT SEND DIRECTLY FROM AN EXCHANGE)
-<br><br><br>
-<h1>0xfe2f0a2d25639366b19e4105068720837277e70f</h1>
-<br><br>
-<a href="https://etherscan.io/address/0xfe2f0a2d25639366b19e4105068720837277e70f">[view on etherscan.io]</a>
-<br><br>
-<a href="https://medium.com/@Delphi_Markets/a-brief-tour-of-the-fair-auction-process-e38c589e11f7">How It Works</a>
-</body>
+
+<!-- Body -->
+<body class="is-preloader preloading parallax" style="color:white; font-family:serif; font-size:16px; background-color:black;">
+  
+  <!-- Preloader -->
+  <div id="preloader" data-spinner="spinner2" data-screenbg="#00050f"></div>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Navbar -->
+    <header class="navbar navbar-sticky navbar-fullwidth">
+      
+      <!-- Toolbar -->
+      <div class="topbar main-navigation">
+        <div class="container">
+          <a href="index.html" class="site-logo">
+            <img src="img/home/delphilogo.png" alt="Delphi">
+          </a><!-- .site-logo -->
+
+          <!-- Mobile Menu Toggle -->
+          <div class="nav-toggle"><span></span></div>
+
+          <div class="toolbar">
+            <a href="whitepaper.pdf" class="text-sm" target="_blank">Whitepaper</a>
+            <a href="https://github.com/delphi-markets" class="text-sm">Github</a>
+            <a id="topbarupdates" href="#mc_embed_signup" class="text-sm updates">Updates</a>
+          </div><!-- .toolbar -->
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+
+    </header><!-- .navbar -->
+
+    <!-- Intro -->
+    <section class="fw-section padding-top-3x bg-parallax" style="background-image:url(img/home/planet.png); height:100%;">
+      <div class="container padding-top">
+        
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+            <img src="img/home/delphilogo.png" alt="Delphi" style="display:inline;">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            To take part in the Delphi crowdsale, fund the following contract 
+            <br>from a wallet you control:
+            <br><br>
+            <h4 id="contractaddress" class="greeny" style="font-weight: 300; font-size: 24px; margin-bottom: 8px;">0xfe2f0a2d25639366b19e4105068720837277e70f</h4>
+            <button id="copyButton" data-toggle="tooltip" data-placement="bottom" title="Copy to clipboard" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></button>
+            <br><div id="msg" class="greeny"></div><br>
+            (DO NOT SEND DIRECTLY FROM AN EXCHANGE)
+            <br><br><br>
+            <a href="https://etherscan.io/address/0xfe2f0a2d25639366b19e4105068720837277e70f" style="color: #02C293;">[view on etherscan.io]</a>
+            <br><br>
+            <a href="https://medium.com/@Delphi_Markets/a-brief-tour-of-the-fair-auction-process-e38c589e11f7" style="color: #02C293;">How It Works</a>
+            <div class="padding-top" id="guides">
+
+            </div>
+          </div>
+        </div><!-- .row -->
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <!-- Footer -->
+        <footer class="footer footer-dark" style="width:100%; background-color:transparent;">
+        <table width="98%" style="text-align:center; border: 0px;">
+            <tr>
+                <td><a href="signature0.txt">Signature 0</a></td>
+                <td><a href="signature1.txt">Signature 1</a></td>
+                <td><a href="signature2.txt">Signature 2</a></td>
+                <td><a href="signature3.txt">Signature 3</a></td>
+                <td><a href="signature4.txt">Signature 4</a></td>
+                <td><a href="signature5.txt">Signature 5</a></td>
+                <td><a href="signature6.txt">Signature 6</a></td>
+            </tr>
+        </table>
+        </footer><!-- .footer -->
+      </div><!-- .container -->
+      
+    </section><!-- .fw-section -->
+
+
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/preloader.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/waves.min.js"></script>
+  <script src="js/vendor/placeholder.js"></script>
+  <!--<script src="js/vendor/smoothscroll.js"></script>-->
+  <script src="js/vendor/waypoints.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
+  <script src="js/vendor/magnific-popup.min.js"></script>
+  <script src="js/vendor/jquery.stellar.min.js"></script>
+  <script src="js/vendor/owl.carousel.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/vendor/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="js/jquery.plugin.js"></script> 
+  <script type="text/javascript">
+    document.getElementById("copyButton").addEventListener("click", function() {
+        copyToClipboardMsg(document.getElementById("contractaddress"), "msg");
+    });
+
+
+    function copyToClipboardMsg(elem, msgElem) {
+	  var succeed = copyToClipboard(elem);
+    if (succeed) {
+        $("#copyButton").attr('data-original-title', 'Address copied to clipboard.').tooltip('show');
+    } else {
+        $("#copyButton").attr('data-original-title', 'Copy failed (please Ctrl+C manually)').tooltip('show');
+    }
+    setTimeout(function () {
+      $("#copyButton").attr('data-original-title', 'Copy to clipboard.').tooltip('hide');
+    }, 800)
+
+}
+
+function copyToClipboard(elem) {
+	  // create hidden text element, if it doesn't already exist
+    var targetId = "_hiddenCopyText_";
+    var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+    var origSelectionStart, origSelectionEnd;
+    if (isInput) {
+        // can just use the original source element for the selection and copy
+        target = elem;
+        origSelectionStart = elem.selectionStart;
+        origSelectionEnd = elem.selectionEnd;
+    } else {
+        // must use a temporary form element for the selection and copy
+        target = document.getElementById(targetId);
+        if (!target) {
+            var target = document.createElement("textarea");
+            target.style.position = "absolute";
+            target.style.left = "-9999px";
+            target.style.top = "0";
+            target.id = targetId;
+            document.body.appendChild(target);
+        }
+        target.textContent = elem.textContent;
+    }
+    // select the content
+    var currentFocus = document.activeElement;
+    target.focus();
+    target.setSelectionRange(0, target.value.length);
+    
+    // copy the selection
+    var succeed;
+    try {
+    	  succeed = document.execCommand("copy");
+    } catch(e) {
+        succeed = false;
+    }
+    // restore original focus
+    if (currentFocus && typeof currentFocus.focus === "function") {
+        currentFocus.focus();
+    }
+    
+    if (isInput) {
+        // restore prior selection
+        elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+    } else {
+        // clear temporary content
+        target.textContent = "";
+    }
+    return succeed;
+}
+  </script>
+</body><!-- <body> -->
+
 </html>
