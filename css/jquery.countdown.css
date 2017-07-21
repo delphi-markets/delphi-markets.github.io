@@ -116,3 +116,53 @@ font-weight:300;
     min-width: 100px;
   }
 }
+
+
+#icoCountdownLabel {
+   position: fixed;
+    top: 36px;
+	left: 40.5%;
+	width:20%;
+	z-index: 30000000;
+	  display: block;
+  position: fixed;
+  padding-top:12px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 9899;
+  background-color:transparent;
+	color:#20b2aa;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #icoCountdownLabel {
+	    line-height: 18px;
+						font-size:10px;
+						top:29px;
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #icoCountdownLabel {
+	position: absolute;
+    top: 20px;
+	left: 40%;
+	line-height: 12px;
+	font-size: 10px;
+    min-width: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #icoCountdownLabel {
+	     position: absolute;
+    top: 14px;
+	left: 50%;
+	line-height: 6px;
+	font-size:5px;
+    min-width: 100px;
+  }
+}
